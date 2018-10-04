@@ -7,7 +7,7 @@ distributions:
       default: indigo/doc-build.yaml
       released-packages-without-doc-job: indigo/doc-released-build.yaml
     notification_emails:
-    - ros-buildfarm-testfarm@googlegroups.com
+    - gheorghe.lisca@navelrobotics.com
     release_builds:
 #      arm: indigo/release-armhf-build.yaml
       default: indigo/release-build.yaml
@@ -18,7 +18,7 @@ distributions:
 #      default: jade/doc-build.yaml
 #      released-packages-without-doc-job: jade/doc-released-build.yaml
 #    notification_emails:
-#    - ros-buildfarm-testfarm@googlegroups.com
+#    - gheorghe.lisca@navelrobotics.com
 #    release_builds:
 #      arm: jade/release-armhf-build.yaml
 #      default: jade/release-build.yaml
@@ -29,7 +29,7 @@ distributions:
       default: kinetic/doc-build.yaml
       released-packages-without-doc-job: kinetic/doc-released-build.yaml
     notification_emails:
-    - ros-buildfarm-kinetic@googlegroups.com
+    - gheorghe.lisca@navelrobotics.com
     release_builds:
       arm: kinetic/release-armhf-build.yaml
       default: kinetic/release-build.yaml
@@ -37,12 +37,12 @@ distributions:
       default: kinetic/source-build.yaml
 doc_builds:
   independent-packages: doc-independent-build.yaml
-jenkins_url: http://54.183.26.131:8080
+jenkins_url: http://192.168.56.101 # 54.183.26.131:8080
 notification_emails:
-- ros-buildfarm-testfarm@googlegroups.com
+- gheorghe.lisca@navelrobotics.com
 prerequisites:
   debian_repositories:
-  - http://54.183.65.232/ubuntu/building
+  - http://192.168.56.102/ubuntu/building
   debian_repository_keys:
   - |
     -----BEGIN PGP PUBLIC KEY BLOCK-----
@@ -78,8 +78,8 @@ prerequisites:
 rosdistro_index_url: https://raw.githubusercontent.com/ros/rosdistro/master/index.yaml
 status_page_repositories:
   default:
-  - http://54.183.65.232/ubuntu/building
-  - http://54.183.65.232/ubuntu/testing
-  - http://54.183.65.232/ubuntu/main
+  - http://192.168.56.102/ubuntu/building
+  - http://192.168.56.102/ubuntu/testing
+  - http://192.168.56.102/ubuntu/main
 type: buildfarm
 version: 1
